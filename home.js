@@ -46,7 +46,7 @@ document.getElementById('last-add-money-btn').addEventListener('click', function
     console.log(currentBalance);
     const addMoneyNumber = parseFloat(addMoneyInput);
     const balanceNumber = parseFloat(currentBalance);
-    const newBalance = balanceNumber - addMoneyNumber  ;
+    const newBalance = addMoneyNumber + balanceNumber   ;
     console.log(newBalance);
     document.getElementById('current-balance').innerText = newBalance;
    }
